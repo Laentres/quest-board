@@ -34,7 +34,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    color: var(--pin-color);
+    background: var(--pin-color);
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
