@@ -5,10 +5,32 @@
     border-radius: 4px; 
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 320px; /*temporary */
+    position: relative;
 }
 
 .quest-card p {
     margin: 2px;
+}
+
+.quest-card::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: var(--pin-color);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quest-card:nth-child(odd) {
+    transform: rotate(-1deg);
+}
+
+.quest-card:nth-child(even) {
+    transform: rotate(1.5deg);
 }
 
 .quest-title {
