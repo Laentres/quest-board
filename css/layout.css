@@ -1,0 +1,13 @@
+#board {
+    display: grid;
+    gap: var(--space);
+    padding: var(--space);
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+header {
+    padding: var(--space);
+}
