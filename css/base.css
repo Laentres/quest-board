@@ -1,4 +1,25 @@
+:root {
+    --text-color: #222;
+    --cork-color: #9C6D44;
+    --parchment-color: #E8C372;
+    --urgent-color: #A12323;
+    --completed-color: #5CE34B;
+    --xp-color: #3AA5F0;
+    --space: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     font-size: 32px;
-    color: #ff5733;
 }
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background: var(--cork-color);
+    font-family:'Times New Roman', Times, serif;
+}
+
