@@ -7,6 +7,16 @@
     position: relative;
 }
 
+.quest-card.completed {
+    box-shadow: var(--completed-color);
+    opacity: 0.8;
+}
+
+.quest-card.urgent {
+    outline: 2px solid var(--urgent-color);
+    box-shadow: 0 0 10px var(--urgent-color);
+}
+
 .quest-card p {
     margin: 2px;
 }

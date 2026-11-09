@@ -1,0 +1,11 @@
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 4px var(--urgent-color); }
+    50% { box-shadow: 0 0 20px var(--urgent-color); }
+    100% { box-shadow: 0 0 4px var(--urgent-color); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .quest-card.urgent {
+        animation: pulse-glow 2s ease-in-out infinite;
+    }
+}
