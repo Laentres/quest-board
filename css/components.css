@@ -88,7 +88,7 @@
 
 .xp-fill {
     height: 100%;
-    width: var(--xp-perfect);
+    width: var(--xp-percent);
     background: var(--xp-color);
     transition: width 0.4s ease;
 }
