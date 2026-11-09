@@ -38,14 +38,6 @@
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.quest-card:nth-child(odd) {
-    transform: rotate(-1deg);
-}
-
-.quest-card:nth-child(even) {
-    transform: rotate(1.5deg);
-}
-
 .quest-card.expired::after {
     content: "X";
     position: absolute;
@@ -56,6 +48,14 @@
     font-size: 150px;
     color: var(--urgent-color);
     pointer-events: none;
+}
+
+.quest-card:nth-child(odd) {
+    transform: rotate(-1deg);
+}
+
+.quest-card:nth-child(even) {
+    transform: rotate(1.5deg);
 }
 
 .quest-title {
@@ -73,3 +73,33 @@
     font-weight: bold;
 }
 
+.xp-bar {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(90%, 400px);
+    height: 28px;
+    background: var(--xp-track-color);
+    border-radius: 14px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.xp-fill {
+    height: 100%;
+    width: var(--xp-perfect);
+    background: var(--xp-color);
+    transition: width 0.4s ease;
+}
+
+.xp-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
